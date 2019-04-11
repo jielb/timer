@@ -66,5 +66,5 @@ $(function(){
 		$("#wRight").html(str);
 		$("#water-M").html(str);
 	};
-	 
+	
 });
