@@ -38,4 +38,3 @@ function ShoppingCart() {
 		localStorage.setItem("cart", str);
 	};
 };
-};
