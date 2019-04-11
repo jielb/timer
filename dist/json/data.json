@@ -1,0 +1,53 @@
+[ 
+	{
+	"margic":"当季热卖",
+	"imgSrc":"img/1.png",	
+	"result":[{"title":"时尚套装","type":"host"},
+	{"title":"打底衫"},
+	{"title":"早春外套","type":"host"},
+	{"title":"显瘦风衣"},
+	{"title":"棒球外套"},
+	{"title":"牛仔外套"},
+	{"title":"毛呢外套","type":"host"},
+	{"title":"针织开衫"},
+	{"title":"V领毛衣","type":"host"},
+	{"title":"西装外套"}]
+	},
+	{
+"margic":"潮流时尚",
+"imgSrc":"img/2.png",	
+"result":[{"title":"网红同款","type":"host"},
+{"title":"复古毛衣"},
+{"title":"韩版卫衣","type":"host"},
+{"title":"加绒卫衣"},
+{"title":"飞行员夹克"},
+{"title":"显瘦V领"},
+{"title":"时尚刺绣"},
+{"title":"牛仔衬衫"}]
+},
+{
+"margic":"上新推荐",
+"imgSrc":"img/3.png",	
+"result":[{"title":"皮夹克"},
+{"title":"春季新品","type":"host"},
+{"title":"刺绣夹克"},
+{"title":"新款外套","type":"host"},
+{"title":"高领毛衣"},
+{"title":"短款外套"},
+{"title":"T恤"},
+{"title":"马甲"}]
+},
+{
+"margic":"经典必备",
+"imgSrc":"img/4.jpg",	
+"result":[{"title":"衬衫"},
+{"title":"荷叶边","type":"host"},
+{"title":"百搭圆领"},
+{"title":"经典格纹","type":"host"},
+{"title":"百搭条纹"},
+{"title":"白衬衫"},
+{"title":"喇叭袖","type":"host"},
+{"title":"绑带衬衫"},
+{"title":"情侣装"}]
+}
+]

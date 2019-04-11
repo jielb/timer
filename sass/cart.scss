@@ -1,0 +1,166 @@
+body,
+            ul,
+            li {
+                margin: 0;
+                padding: 0;
+            }
+            body{
+    overflow:scroll;
+    overflow-x:hidden
+}s
+            li {
+                list-style: none;
+            }
+            
+            img {
+                width: 50px;
+                height: 50px;
+            }
+            
+            span {
+                margin: 0 10px;
+            }
+            
+            #jisuan {
+                height: 40px;
+                width: 1000px;
+                background: #ddd;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+            
+            #jisuan div:first-child {
+                float: left;
+            }
+            
+            #jisuan div:last-child {
+                float: right;
+            }
+            
+            #jisuan div:first-child span {
+                font-size: 13px;
+                display: block;
+                float: left;
+                height: 40px;
+                line-height: 40px;
+                margin-left: 25px;
+            }
+            
+            #jisuan div:first-child span:first-child {
+                margin-left: 2px;
+            }
+            
+            #jisuan div:last-child div {
+                font-size: 13px;
+                float: left;
+                height: 40px;
+                line-height: 40px;
+                margin-left: 25px;
+            }
+            
+            #jisuan div:last-child div:nth-child(1) span {
+                height: 30px;
+                display: block;
+                margin: 0;
+            }
+            
+            #jisuan div:last-child div:nth-child(1) span:nth-child(2) {
+                color: red;
+            }
+            
+            #jisuan div:last-child div:nth-child(2) span {
+                color: red;
+            }
+            
+            #jisuan div:last-child div:last-child {
+                width: 60px;
+                text-align: center;
+                background: #ccc;
+            }
+            
+            #cartList {
+                width: 1000px;
+                margin: 0 auto;
+            }
+            
+            #cartList li {
+                overflow: hidden;
+                font-size: 12px;
+                width: 998px;
+                /*height: 60px;*/
+                border: 1px solid #cecece;
+                margin-top: 5px;
+            }
+            
+            #cartList li div {
+                float: left;
+            }
+            
+            #cartList li div:first-child {
+                width: 100px;
+                margin-right: 50px;
+            }
+            
+            #cartList li div:first-child .ch {
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+            
+            #cartList li div:first-child img {
+                vertical-align: middle;
+            }
+            
+            #cartList li div:nth-child(2) {
+                width: 300px;
+            }
+            
+            #cartList li div:nth-child(2) span {
+                display: block;
+                margin: 5px 0;
+            }
+            
+            #cartList li div:nth-child(2) span:last-child {
+                margin-left: 15px;
+                color: red;
+                font-size: 14px;
+            }
+            
+            #cartList li div:nth-child(3) {
+                width: 300px;
+                float: right;
+                margin: 15px 20px 0 0;
+            }
+            
+            #cartList li div:nth-child(3) span {
+                width: 20px;
+                height: 20px;
+                display: block;
+                float: left;
+                background: red;
+                font-size: 20px;
+                text-align: center;
+                line-height: 20px;
+                margin: 0 5px;
+            }
+            
+            #cartList li div:nth-child(3) span:nth-of-type(3) {
+                width: 50px;
+                margin: 0 0 0 20px;
+                font-size: 13px;
+            }
+            
+            #cartList li div:nth-child(3) .numCont {
+                width: 25px;
+                height: 13px;
+                float: left;
+                text-align: center;
+                layout-grid-line: 13px;
+                font-size: 10px;
+            }
+            
+            #cartList li div:nth-child(3) i {
+                display: block;
+                color: red;
+                float: left;
+                margin-right: 20px;
+            }

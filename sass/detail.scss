@@ -1,0 +1,336 @@
+body,p,ul,li,input,h3{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow:scroll;
+    overflow-x:hidden
+}
+img{
+    display: block;
+    border: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*右边脱离文本流fixed定位*/
+#fixed{
+    z-index: 10;
+    padding-top: 48px;
+    font-size: 12px;
+    width: 30px;
+    height: 100%;
+    background: #202020;
+    position: fixed;
+    top: 0;
+    right: 0;
+    div{
+        padding: 10px 0 0 4px;
+        &:hover{
+           background: #ff4466; 
+        }
+        a{
+            text-align: center;
+            width: 22px;
+            padding-bottom: 10px;
+            display: block;
+            color: white;
+            border-bottom: 1px solid #000;
+        }
+    } 
+    div:nth-child(4),div:nth-child(5){
+        position: relative;
+        p{
+           display: none;
+           position: absolute;
+           left: -103px;
+           top: 0;
+           background: #202020;
+           width: 79px;
+           padding: 11px 0 11px 24px; 
+           a{
+               color: white;
+               width:79px;
+               height: 21px;
+               display: block;
+               border-bottom: none;
+               text-align: left;
+               padding: 0;
+               &:hover{
+                   text-decoration: underline;
+               }
+           }
+        }
+    } 
+    div:last-child{
+        display: none;
+        margin-top: 130px;
+        padding: 0px 0px 10px 4px;
+        span{
+            text-align: center;
+            width: 22px;
+            padding: 10px 0px;
+            display: block;
+            color: white;
+            border-top: 1px solid white;
+        }
+    }
+}
+/*详情页top 搜索框*/
+@mixin topcss{
+    width: 75px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    float: left;
+    background: #FF4466; 
+}
+#detailTop{
+   height: 101px;
+   width: 1349px;
+   border-bottom: 1px solid #CECECE;
+   #dt{
+       width: 1200px;
+       height: 92px;
+       margin: 0 auto; 
+       #dT{
+           margin: 25px 0 0 20px;
+           width: 944px;
+           height: 76px;
+           float: right; 
+           input:first-child{
+               outline: none;
+               border: none;
+               width: 375px;
+               height: 40px;
+               border: 1px solid #FF4466;
+               border-right:none;
+               border-radius: 3px 0 0 3px;
+               padding-left: 15px;
+               float: left;
+           }
+           input:nth-child(2){ 
+               @include topcss;
+               border-radius: 0px 3px 3px 0px; 
+           }
+           input:last-child{ 
+               @include topcss;
+               margin-left: 8px;
+               border-radius:3px; 
+           }
+           #dTr{
+               width: 312px;
+               height: 49px; 
+               float: right;
+               font-size: 12px;
+               a{
+                    height: 45px;
+                    display: block;
+                    float: left;
+                    margin-left: 34px;
+                    cursor: pointer;
+                    color: #333;
+                    i{
+                        width: 24px;
+                        height: 24px;
+                        display: block;
+                    }
+                } 
+                #massage{
+                    height: 45px;
+                    height: 24px;
+                    float: left;
+                    cursor: pointer;
+                     i{
+                        width: 24px;
+                        height: 24px;
+                        display: block;
+                    }
+                }
+                #tm{
+                    float: right;
+                    width: 64px;
+                    height: 40px;
+                    line-height: 40px;
+                    cursor: pointer;
+                }
+            } 
+        }
+    }
+}
+
+/* log*/
+#log{
+    width: 1349px;
+    height: 150px;
+    img{
+        width: 1349px;
+        height: 150px;
+    }
+}
+
+/*  nav  */
+#detailNav{
+    width: 1349px;
+    height: 30px;
+    background: #333333;
+    margin-bottom: 20px;
+    div{
+        width: 1200px;
+        height: 30px;
+        margin: 0 auto;
+        ul{
+            li{
+                float: left;
+                padding: 7px 0;
+                a{
+                    cursor: pointer;
+                    padding: 0 17px;
+                    display: block;
+                    color: white;
+                    font-size: 12px;                    
+                    border-right: 1px solid #C3C3C3;
+                }
+                #teshu{
+                    border-right: none;
+                }
+            }
+            #shopping{
+                width: 90px;
+                position: relative;
+                #shop{
+                    width: 55px;
+                }
+                ul{
+                    width: 160px;
+                    display: none;
+                    background: #000;
+                    position: absolute;
+                    opacity: 0.3;
+                    filter:alpha(opcity=30);
+                    left: 0;
+                    top: 30px;
+                    li{
+                        width: 160px;
+                        padding: 0;
+                       a{
+                           width: 108px;
+                           height: 30px;
+                           display: block;
+                           line-height: 30px;
+                           font-size: 12px;
+                           padding: 0px 26px; 
+                           &:hover{
+                               background: #C3C3C3;
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  物品详细信息  */
+#shopping{
+    width: 1349px;
+    height: 680px;
+    div:first-child{
+        padding-top: 20px;
+        width: 1200px;
+        height: 680px;
+        margin: 0 auto; 
+        .fd-picture{
+           width: 400px;
+           height: 669px; 
+           float: left;
+           margin-right: 30px;
+           img{
+               width: 400px;
+               height: 600px;
+           }
+           .sx-picture{
+               margin-top: 5px;
+               width: 400px;
+               height: 60px;
+               padding: 0 100px;
+               img{
+                   width: 60px;
+                   height: 60px;
+               }
+           }
+        }
+        #bug{
+            position: relative;
+            height: 680px;
+            width: 450px;
+            margin-top: 20px;
+            
+            p{
+                margin: 15px 0px;
+            }
+            img{
+                margin: 20px 5px;
+                width: 50px;
+                height: 50px;
+            }
+            #num{
+                margin: 30px 10px;
+                height: 30px;
+                span{
+                    width: 28px;
+                    height: 28px;
+                    display: block;
+                    float: left; 
+                    font-size: 20px;
+                    font-weight: 300;
+                    line-height: 30px;
+                    text-align: center;
+                    border: 1px solid #CECECE;
+                }
+                input{
+                    float: left;
+                    width: 40px;
+                    height: 28px;
+                    border: 1px solid #CECECE;
+                    outline: none;
+                    line-height: 28px;
+                    text-align: center;
+                }
+            }
+            #numBtn{
+                position: absolute;
+                left: 75px;
+                top: 325px;
+                width: 800px;
+                height: 50px; 
+                input{
+                    width: 200px;
+                    height: 50px;
+                    outline: none;
+                    margin: 0 5px; 
+                }
+                input:first-child{
+                    background: red;
+                    color: white;
+                }
+                input:last-child{
+                    background: white;
+                    color: #8D8D8D;
+                    border: 1px solid #CECECE;
+                }
+            }
+        }
+    }
+}
+
+

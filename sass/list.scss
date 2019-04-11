@@ -1,0 +1,594 @@
+body,ul,li,input,h1,h2,h3,h4,h5,p{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow:scroll;
+    overflow-x:hidden
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+
+/*右边脱离文本流fixed定位*/
+#fixed{
+    z-index: 10;
+    padding-top: 48px;
+    font-size: 12px;
+    width: 30px;
+    height: 100%;
+    background: #202020;
+    position: fixed;
+    top: 0;
+    right: 0;
+    div{
+        padding: 10px 0 0 4px;
+        &:hover{
+           background: #ff4466; 
+        }
+        a{
+            text-align: center;
+            width: 22px;
+            padding-bottom: 10px;
+            display: block;
+            color: white;
+            border-bottom: 1px solid #000;
+        }
+    } 
+    div:nth-child(4),div:nth-child(5){
+        position: relative;
+        p{
+           display: none;
+           position: absolute;
+           left: -103px;
+           top: 0;
+           background: #202020;
+           width: 79px;
+           padding: 11px 0 11px 24px; 
+           a{
+               color: white;
+               width:79px;
+               height: 21px;
+               display: block;
+               border-bottom: none;
+               text-align: left;
+               padding: 0;
+               &:hover{
+                   text-decoration: underline;
+               }
+           }
+        }
+    } 
+    div:last-child{
+        display: none;
+        margin-top: 130px;
+        padding: 0px 0px 10px 4px;
+        span{
+            text-align: center;
+            width: 22px;
+            padding: 10px 0px;
+            display: block;
+            color: white;
+            border-top: 1px solid white;
+        }
+    }
+}
+
+/*顶部导航条*/
+#nav{
+    font-size: 12px;
+    width: 1349px;
+    height: 33px;
+    border-bottom: 1px solid #f0f0f0;
+    div:first-child{
+        width: 1198px;
+        height: 33px;
+        margin: 0 auto; 
+        #nav1{ 
+            width: 260px;
+            float: right; 
+            a{ 
+                color: #999999;
+                height: 33px;
+                line-height: 33px;
+                display: block;
+                margin: 0 7px;
+                float: left;
+            } 
+            #nav2{
+                position: relative;
+            /*显示隐藏未写*/
+                #nav-op{
+                    display: none;
+                    width: 960px;
+                    padding: 32px 0;
+                    position: absolute;
+                    background: red;
+                    top: 33px;
+                    left: -870px;
+                }
+            }
+        }
+    }
+}
+
+/*log 搜索*/
+@mixin icss{
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-bottom: 10px; 
+}
+@mixin pad{
+    width: 301.72px; 
+    float: left;
+    height: 183px;
+    margin: 0px;
+    border-right: 1px solid #CECECE;
+    padding: 30px 0px 30px 20px;
+}
+@mixin tm{ 
+    line-height: 24px;
+    width: 301.72px;
+    height: 24px;
+    margin-bottom: 7px; 
+}
+#log{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    
+    div:first-child{
+        width: 130px;
+        height: 73px;
+        float: left;
+        img{
+            width: 130px;
+            height: 100px;
+        }
+    }
+    div:nth-child(2){
+        margin-left: 20px;
+        width: 50px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 12px;
+        color: #333333;
+        float: left;
+        position: relative;
+        #list{
+            display: none;
+            margin: 0;
+            background: white;
+            position: absolute;
+            top: 80px;
+            left: -185px;
+            width: 1120px;
+            height: 243px;
+            border: 1px solid #cecece;
+            border-radius: 2px;
+            z-index: 10;
+            #list1{ 
+                @include pad;   
+                div{
+                   @include tm;
+                }
+                ul{ 
+                   li{
+                       float: left;
+                       width: 24px;
+                       height: 24px;
+                       line-height: 24px;
+                       margin-right: 30px;
+                       a{
+                           color: #c3c3c3;
+                           &:hover{
+                               color:#FF0000;
+                           }
+                       }
+                   } 
+                }   
+            }
+            #list2{
+                @include pad; 
+                div{
+                   @include tm;
+                }
+                ul{ 
+                    li{
+                        float: left; 
+                        height: 24px;
+                        line-height: 24px;
+                        margin-right: 30px;
+                        a{
+                            color: #c3c3c3;
+                            &:hover{
+                               color:#FF0000;
+                            }
+                        }
+                    } 
+                }
+            }
+            #list3{
+                width: 452.58px; 
+                float: left;
+                height: 156px;
+                margin: 0px; 
+                padding: 30px 0px 30px 20px;
+                div{
+                   @include tm;
+                   width: 452.58px;
+                }
+                ul{ 
+                    li{
+                        float: left; 
+                        height: 24px;
+                        line-height: 24px;
+                        margin-right: 30px;
+                        a{
+                            color: #c3c3c3;
+                            &:hover{
+                               color:#FF0000;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+    }
+    div:last-child{
+        width: 914px;
+        margin-left: 76px;
+        margin-top: 27px;
+        float: left;
+        div:first-child{
+            width: 552px;
+            float: left;
+            input{
+                width: 462px;
+                height: 48px;
+                line-height: 48px;
+                float: left;
+                padding: 0 15px;
+                background: #f7f7f7;
+                outline: none;
+                border: none;
+                border-radius: 5px 0 0 5px; 
+            }
+            #search{
+                cursor: pointer;
+                width: 58px;
+                height: 48px;
+                text-align: center;
+                line-height: 48px;
+                border-radius: 0 5px 5px 0; 
+                background: #8d8d8d;
+                display: block;
+                float: left;
+                margin-left: 2px;
+                i{
+                    color: white;
+                }
+            }   
+        }
+        .ms{
+            font-size: 12px; 
+            margin: 0;
+            float: right;
+            width: 342px;
+            height: 48px;
+            line-height: 0;
+            .massge{
+                float: left;
+                height: 48px; 
+                width: 26px;
+                color: #333333;
+                a{   
+                    cursor: pointer;
+                    width: 24px;
+                    height: 24px; 
+                    display: block; 
+                    margin-bottom: 10px; 
+                }
+            }
+            #bug{
+                cursor: pointer;
+                height: 45px;
+                width: 25px;
+                display: block;
+                margin-left: 28px;
+                float: left;
+                color: #333333;
+                i{
+                    @include icss;
+                }
+            }
+            #cart{
+                cursor: pointer;
+                height: 45px;
+                width: 38px;
+                display: block;
+                float: left;
+                margin-left: 23px;
+                color: #333333;
+                i{
+                    @include icss;
+                }
+            }
+            #app{
+                cursor: pointer;
+                width: 46px;
+                height: 45px; 
+                float: left;
+                margin-left: 10px;
+                position: relative;
+                p:first-child{
+                    margin-left: 8px;
+                    @include icss;
+                }
+                img{
+                    display: none;
+                    width: 181px;
+                    height: 191px;
+                    position: absolute;
+                    top: 60px;
+                    left: -60px; 
+                }
+            }
+            #tm{
+                margin: 0;
+                width: 64px;
+                height: 45px;
+                float: right;
+                line-height: 45px;
+                img{
+                    margin-top: 10px;
+                    margin-right: 5px;
+                    width: 30px;
+                    height: 30px;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+/*list 中具体物件nav*/
+#listNav{
+    width: 1198px;
+    height: 318px;
+    margin: 0 auto;
+    border: 1px solid #CECECE;
+    #list-nav{
+        width: 1198px;
+        height: 40px;
+        background: #f7f7f7;
+        ul{
+            margin-left: 15px;
+            li{
+                float: left; 
+                a{
+                    width: 65px;
+                    height: 38px;
+                    font-size: 16px;
+                    display: block;
+                    line-height: 38px;
+                    text-align: center;
+                    color: #393939; 
+                    &:hover{
+                        border-top: 2px solid #ff4e6e;
+                        border-left: 1px solid #CECECE; 
+                        border-right: 1px solid #CECECE; 
+                    } 
+                }
+                .a-right{
+                    border-top: 2px solid #ff4e6e;
+                    border-left: 1px solid #CECECE; 
+                    border-right: 1px solid #CECECE; 
+                }
+            }
+        }
+    }
+    #list-nav2{
+        position: relative;
+        height: 180px;
+        width: 1148px;
+        padding: 30px 20px 20px 30px;
+        border-top: 1px solid #CECECE;
+        .listNav2{
+            width: 435px;
+            height: 96px;
+            margin: 0 25px 30px 0;
+            float: left;
+            div{
+                width: 435px;
+                height: 18px;
+                line-height: 18px;
+                font-size: 16px; 
+                margin-bottom: 6px;
+            }
+            ul{
+               li{ 
+                  // float: left;
+                   img{
+                       width: 65px;
+                       height: 65px;
+                       border: 1px solid #CECECE;
+                       float: left;
+                   }
+                   a{
+                       font-size: 13px;
+                       color: #333; 
+                       margin-bottom: 5px;
+                       padding: 0px 16px;
+                       height: 16px;
+                       line-height: 20px;
+                       display: block;
+                       float: left;
+                       border-right: 1px solid #CECECE;
+                       &:hover{
+                           text-decoration: underline;
+                           color: #333;
+                       }
+                   }
+               } 
+            }
+        } 
+    }
+}
+
+/*内容*/
+#title{
+    width: 1200px;
+    height: 32px;
+    margin: 0 auto;     
+    h3{
+        margin: 30px 0 8px 0;
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+/* 价格区域选择*/
+@mixin priSpan{
+    width: 12px;
+    height: 22px;
+    display: block;
+    float: left;
+}
+@mixin priInput{
+    width: 34px;
+    height: 22px;
+    border: none;
+    outline: none;
+}
+#pri{
+    width: 1198px; 
+    height: 24px;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 7px 0px;
+    border: 1px solid #CECECE;
+    #pri1{
+        width: 46px;
+        height: 24px;
+        border: 1px solid #CECECE;
+        margin-left: 20px;
+        float: left;
+        span{
+            @include priSpan;
+        }
+        input{
+            @include priInput;
+        }
+    }
+    #pri-to{
+        height: 24px;
+        width: 5px;
+        padding: 0 5px;
+        float: left;
+        line-height: 24px;
+    }
+    #pri2{
+        width: 46px;
+        height: 24px;
+        float: left;
+        border: 1px solid #CECECE;
+        span{
+            @include priSpan;
+        }
+        input{
+            @include priInput;
+        }
+    }
+    #pri-btn{
+        width: 45px;
+        float: left;
+        margin-left: 10px;
+        input{            
+            width: 45px;
+            height: 26px;
+            border: 1px solid #CECECE;
+            font-size: 12px;
+            text-align: center;
+            line-height: 26px;
+            outline: none;
+            background: white;
+        }
+    }
+    #pri-border1{
+        margin-left: 20px;
+        float: left;
+        width: 1px;
+        height: 24px;
+        background: #CECECE;
+    }
+    #pri-border2{
+        margin: 3px 0px 0px 15px;
+        float: left;
+        width: 1px;
+        height: 16px;
+        background: #CECECE;
+    }
+}
+
+#list-content{
+    width: 1230px;
+    margin: 0 auto;
+    padding-left: 30px;
+    ul{
+        li{
+            padding: 0 25px 25px 0;
+            float: left;
+            .list-border{
+                width: 219px;
+                border: 1px solid #f2f2f2;                
+                &:hover{
+                    border: 1px solid red;
+                }
+                img{
+                    width: 219px;
+                    height: 293px;
+                }
+                p{
+                    width: 202px;
+                    font-size: 12px;
+                    color: #333333;
+                    margin: 3px 0px 3px 10px;
+                }
+                span{
+                    font-size: 14px;
+                    margin-left: 15px;
+                    color: red;
+                }
+            }
+        } 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,622 @@
+body,ul,li,input,h1,h2,h3,h4,h5,p{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow:scroll;
+    overflow-x:hidden
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+
+
+/*顶部导航条*/
+#nav{
+    font-size: 12px;
+    width: 1349px;
+    height: 33px;
+    border-bottom: 1px solid #f0f0f0;
+    div:first-child{
+        width: 1198px;
+        height: 33px;
+        margin: 0 auto; 
+        #nav1{ 
+            width: 260px;
+            float: right; 
+            a{ 
+                color: #999999;
+                height: 33px;
+                line-height: 33px;
+                display: block;
+                margin: 0 7px;
+                float: left;
+            } 
+            #nav2{
+                position: relative;
+            /*显示隐藏未写*/
+                #nav-op{
+                    display: none;
+                    width: 960px;
+                    padding: 32px 0;
+                    position: absolute;
+                    background: red;
+                    top: 33px;
+                    left: -870px;
+                }
+            }
+        }
+    }
+}
+
+/*log 搜索*/
+@mixin icss{
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-bottom: 10px; 
+}
+@mixin pad{
+    width: 301.72px; 
+    float: left;
+    height: 183px;
+    margin: 0px;
+    border-right: 1px solid #CECECE;
+    padding: 30px 0px 30px 20px;
+}
+@mixin tm{ 
+    line-height: 24px;
+    width: 301.72px;
+    height: 24px;
+    margin-bottom: 7px; 
+}
+#log{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    
+    div:first-child{
+        width: 130px;
+        height: 73px;
+        float: left;
+        img{
+            width: 130px;
+            height: 100px;
+        }
+    }
+    div:nth-child(2){
+        margin-left: 20px;
+        width: 50px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 12px;
+        color: #333333;
+        float: left;
+        position: relative;
+        #list{
+            display: none;
+            margin: 0;
+            background: white;
+            position: absolute;
+            top: 80px;
+            left: -185px;
+            width: 1120px;
+            height: 243px;
+            border: 1px solid #cecece;
+            border-radius: 2px;
+            #list1{ 
+                @include pad;   
+                div{
+                   @include tm;
+                }
+                ul{ 
+                   li{
+                       float: left;
+                       width: 24px;
+                       height: 24px;
+                       line-height: 24px;
+                       margin-right: 30px;
+                       a{
+                           color: #c3c3c3;
+                           &:hover{
+                               color:#FF0000;
+                           }
+                       }
+                   } 
+                }   
+            }
+            #list2{
+                @include pad; 
+                div{
+                   @include tm;
+                }
+                ul{ 
+                    li{
+                        float: left; 
+                        height: 24px;
+                        line-height: 24px;
+                        margin-right: 30px;
+                        a{
+                            color: #c3c3c3;
+                            &:hover{
+                               color:#FF0000;
+                            }
+                        }
+                    } 
+                }
+            }
+            #list3{
+                width: 452.58px; 
+                float: left;
+                height: 156px;
+                margin: 0px; 
+                padding: 30px 0px 30px 20px;
+                div{
+                   @include tm;
+                   width: 452.58px;
+                }
+                ul{ 
+                    li{
+                        float: left; 
+                        height: 24px;
+                        line-height: 24px;
+                        margin-right: 30px;
+                        a{
+                            color: #c3c3c3;
+                            &:hover{
+                               color:#FF0000;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+    }
+    div:last-child{
+        width: 914px;
+        margin-left: 76px;
+        margin-top: 27px;
+        float: left;
+        div:first-child{
+            width: 552px;
+            float: left;
+            input{
+                width: 462px;
+                height: 48px;
+                line-height: 48px;
+                float: left;
+                padding: 0 15px;
+                background: #f7f7f7;
+                outline: none;
+                border: none;
+                border-radius: 5px  0 0 5px; 
+            }
+            #search{
+                cursor: pointer;
+                width: 58px;
+                height: 48px;
+                text-align: center;
+                line-height: 48px;
+                border-radius: 0 5px 5px 0; 
+                background: #8d8d8d;
+                display: block;
+                float: left;
+                margin-left: 2px;
+                i{
+                    color: white;
+                }
+            }   
+        }
+        .ms{
+            font-size: 12px; 
+            margin: 0;
+            float: right;
+            width: 342px;
+            height: 48px;
+            line-height: 0;
+            .massge{
+                float: left;
+                height: 48px; 
+                width: 26px;
+                color: #333333;
+                a{   
+                    cursor: pointer;
+                    width: 24px;
+                    height: 24px; 
+                    display: block; 
+                    margin-bottom: 10px; 
+                }
+            }
+            #bug{
+                cursor: pointer;
+                height: 45px;
+                width: 25px;
+                display: block;
+                margin-left: 28px;
+                float: left;
+                color: #333333;
+                i{
+                    @include icss;
+                }
+            }
+            #cart{
+                cursor: pointer;
+                height: 45px;
+                width: 38px;
+                display: block;
+                float: left;
+                margin-left: 23px;
+                color: #333333;
+                i{
+                    @include icss;
+                }
+            }
+            #app{
+                cursor: pointer;
+                width: 46px;
+                height: 45px; 
+                float: left;
+                margin-left: 10px;
+                position: relative;
+                p:first-child{
+                    margin-left: 8px;
+                    @include icss;
+                }
+                img{
+                    display: none;
+                    width: 181px;
+                    height: 191px;
+                    position: absolute;
+                    top: 60px;
+                    left: -60px; 
+                }
+            }
+            #tm{
+                margin: 0;
+                width: 64px;
+                height: 45px;
+                float: right;
+                line-height: 45px;
+                img{
+                    margin-top: 10px;
+                    margin-right: 5px;
+                    width: 30px;
+                    height: 30px;
+                    float: left;
+                }
+            }
+        }
+    }
+}
+    
+    
+  /* 首页 瀑布流*/  
+#index-water{
+    width: 1349px;
+    #idxWater{
+        width: 1200px;
+        margin: 0 auto;
+        #wLeft{
+            width: 220px;
+            margin-right: 24px;
+            float: left;
+            .wLt{
+                background: #FFC0CB;
+                width: 220px;
+                border-radius: 6px;
+                margin-bottom: 20px;
+                .wlts{
+                    position: relative;
+                    width: 220px;
+                    height: 230px;
+                    .bigImg{
+                        width: 220px;
+                        height: 230px;
+                        border-radius: 5px 5px 0 0;
+                    }
+                    .touming{
+                        display: none;
+                        width: 220px;
+                        height: 230px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        .zan{
+                            width: 30px;
+                            height: 30px;
+                            color: white;
+                            background: red;
+                            text-align: center;
+                            line-height: 30px;
+                            font-size: 14px; 
+                            border-radius: 50%;
+                            margin:5px 0 5px 170px;
+                        }
+                        .str{
+                            width: 30px;
+                            height: 30px;
+                            color: white;
+                            border-radius: 50%;
+                            background: red;
+                            font-size: 14px;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-left: 170px;
+                            margin-bottom: 100px;
+                        }
+                         
+                    }
+                }
+                .wltx{
+                    width: 214px; 
+                    .minImg{
+                        width: 25px;
+                        height: 25px;
+                        float: left;
+                        margin-left:0px;
+                    }
+                }
+            }
+        }
+        #wMiddle{
+            float: left;
+            width: 710PX;
+            div:first-child{
+                width: 710px;
+                height: 1177px;
+                img{
+                    width: 710px;
+                    height: 750px;
+                    border-radius: 8px;
+                    margin-bottom: 30px;                    
+                }
+                #midCont{
+                   width: 698px;
+                   padding-left: 12px;
+                   height: 403px;
+                   border-radius: 8px;
+                   box-shadow: 0 0 0px 1px #c8c8c8;
+                   background: white;
+                   div:first-child{
+                       width: 688px;
+                       height: 55px;
+                       padding-left: 10px;
+                       line-height: 55px;
+                       span{
+                           font-size: 20px;
+                           font-weight: 400;
+                           display: block;
+                           float: left;
+                       } 
+                       #cart{
+                           color: #FF4466;
+                       }
+                       #shop{
+                           color: #333;
+                       }
+                       p{
+                           float: left;
+                           width: 120px;
+                           height: 16px; 
+                           margin-left: 20px;
+                           margin-top: 16px;
+                           line-height: 20px;
+                           text-align: center; 
+                           font-size:13px;
+                           font-weight: 200;
+                           color: #C3C3C3;
+                           border-left: 1px solid #cecece;
+                           }
+                   } 
+                   div:nth-child(2){
+                       width: 698px;
+                       height: 224px;
+                       margin-bottom: 20px;
+                       a{
+                           width: 112px;
+                           height: 112px;
+                           display: block;
+                           color: #333;
+                           float: left;
+                           cursor: pointer;
+                           img{
+                               width: 112px;
+                               height: 86px;
+                               margin: 0;
+                           }
+                           span{
+                               width: 112px;
+                               height: 26px;
+                               font-size: 12px;
+                               line-height: 26px;
+                               text-align: center;
+                               display: block;
+                           }
+                       }
+                   }
+                   div:last-child{
+                       width: 710px;
+                       height: 104px;
+                       a{
+                           color: #333;
+                           background: #f5f5f5;
+                           width: 120px;
+                           height: 35px;
+                           margin: 0 0 14px 18px;
+                           display: block;
+                           float: left;
+                           line-height: 35px;
+                           text-align: center;
+                           border-radius: 6px; 
+                           font-size: 12px;
+                           cursor: pointer;
+                       }
+                       #color{
+                           color: #FF4466;
+                       }
+                   }
+                }
+            }
+            #water-M{
+                width: 710px; 
+                height: 2250px;
+                margin-top: 20px; 
+                .wLt{
+                background: #FFC0CB;
+                width: 220px;
+                height: 230px;
+                float: left;
+                border-radius: 6px;
+                margin-bottom: 20px;
+                margin-left: 10px;
+                .wlts{
+                    position: relative;
+                    width: 220px;
+                    height: 230px;
+                    .bigImg{
+                        width: 220px;
+                        height: 230px;
+                        border-radius: 5px 5px 0 0;
+                    }
+                    .touming{
+                        display: none;
+                        width: 220px;
+                        height: 230px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        .zan{
+                            width: 30px;
+                            height: 30px;
+                            color: white;
+                            background: red;
+                            text-align: center;
+                            line-height: 30px;
+                            font-size: 14px; 
+                            border-radius: 50%;
+                            margin:5px 0 5px 170px;
+                        }
+                        .str{
+                            width: 30px;
+                            height: 30px;
+                            color: white;
+                            border-radius: 50%;
+                            background: red;
+                            font-size: 14px;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-left: 170px;
+                            margin-bottom: 100px;
+                        }
+                         
+                    }
+                }
+                .wltx{
+                    width: 214px; 
+                    .minImg{
+                        width: 25px;
+                        height: 25px;
+                        float: left;
+                        margin-left:0px;
+                    }
+                }
+            }
+            }
+        }
+        #wRight{
+            float: left;
+            width: 220px;
+            margin-left: 24px;
+            .wLt{
+                background: #FFC0CB;
+                width: 220px;
+                border-radius: 6px;
+                margin-bottom: 20px;
+                .wlts{
+                    position: relative;
+                    width: 220px;
+                    height: 230px;
+                    .bigImg{
+                        width: 220px;
+                        height: 230px;
+                        border-radius: 5px 5px 0 0;
+                    }
+                    .touming{
+                        display: none;
+                        width: 220px;
+                        height: 230px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        .zan{
+                            width: 30px;
+                            height: 30px;
+                            color: white;
+                            background: red;
+                            text-align: center;
+                            line-height: 30px;
+                            font-size: 14px; 
+                            border-radius: 50%;
+                            margin:5px 0 5px 170px;
+                        }
+                        .str{
+                            width: 30px;
+                            height: 30px;
+                            color: white;
+                            border-radius: 50%;
+                            background: red;
+                            font-size: 14px;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-left: 170px;
+                            margin-bottom: 100px;
+                        }
+                         
+                    }
+                }
+                .wltx{
+                    width: 214px; 
+                    .minImg{
+                        width: 25px;
+                        height: 25px;
+                        float: left;
+                        margin-left:0px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+ 
+ 
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

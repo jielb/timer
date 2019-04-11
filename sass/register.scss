@@ -1,0 +1,104 @@
+body,ul,li,input,p{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow:scroll;
+    overflow-x:hidden
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+    border: none;
+}
+
+/* 头部  */
+#login-top{
+    width: 1349px;
+    padding: 20px 0;
+    height: 62px;
+    div{
+        width: 1200px;
+        height: 62px;
+        margin: 0 auto;
+        img{
+            margin-top: -20px;
+            width: 130px;
+            height: 100px;
+            float: left;
+        }
+        span{
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 863px;
+            height: 20px;
+            display: block;
+            float: left;
+            color: #333;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            background: pink;
+            border: 1px solid #FF4466;
+        }
+    }
+}
+
+#register{
+    width: 1349px;
+    height: 600px;
+    #zhuce{
+        margin: 50px auto;
+        width: 450px;
+        div{           
+            input{
+                padding-left: 8px;
+                width: 440px;
+                border: 1px solid #ceecec;
+                height: 35px;
+                line-height: 35px;
+                outline: none;
+            }
+            #btn{
+                width: 448px;
+                background: red;
+                height: 40px;
+                color: white;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            p{
+                font-size: 12px;
+                width: 450px;
+                height: 14px;
+               
+            }
+        }
+    }
+}
+
+#xieyi{
+    width: 1000px;
+    height: 480px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #8D8D8D;
+    a{
+        width: 40px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background: mediumvioletred;
+        color: #333333;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>蘑菇街详情页</title>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cart1.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+	</head>
+	<body>
+		
+		<!--右边脱离文本流fixed定位-->
+	 	<div id="fixed"> 
+	 		<div>
+	 			<a href="index.html">首页</a>
+	 		</div>
+	 		<div>
+	 			<a href="#">优惠券</a>  
+	 		</div>
+	 		<div>
+	 			<a href="#">钱包</a>
+	 		</div>
+	 		<div class="fix">
+	 			<a href="#">客户服务</a>  
+		 		<p>
+		 			<a href="#">消费者服务</a>
+		 			<a href="#">商家服务</a>
+		 			<a href="#">规则中心</a>
+		 		</p>
+	 		</div>
+	 		<div class="fix"> 
+		 		<a href="#">商家后台</a>   
+		 		<p>
+		 			<a href="#">管理后台</a>
+		 			<a href="#">商家社区</a>
+		 			<a href="#">商家培训</a>
+		 			<a href="#">市场入住</a>
+		 		</p>
+	 		</div>
+	 		<div id="Top">
+	 			<span>Top</span>  
+	 		</div>
+	 	</div>
+		<!--详情页 top  搜索框-->
+		<div id="detailTop">
+			<div id="dt">
+				<div id="dT">
+					<div>
+						<input type="text" placeholder="睡衣" />
+						<input type="button" value="搜全站" />
+						<input type="button" value="搜本店" /> 
+					</div>
+					<div id="dTr">
+						<div id="massage"><i></i>消息</div>
+						<a href=""><i></i>收藏</a>
+						<a href="cart.html"><i></i>购物车</a>
+						<div id="tm">
+							<img src="" />  
+							<a id="login-detail" href="login.html">登陆</a>
+						</div>
+					</div>
+				</div>  
+			</div>
+		</div>
+		
+		<!--log -->
+		<div id="log">
+			<img src="img/333.png" />
+		</div>
+		
+		<!-- 详情页 nav-->
+		<div id="detailNav">
+			<div>
+				<ul>
+					<li><a>首页</a></li>
+					<li id="shopping">
+						<a id="shop">全部商品</a>
+						<ul>
+							<li><i></i><a>上衣/外套</a></li>
+							<li><i></i><a>T恤/衬衫</a></li>
+							<li><i></i><a>开衫/马甲</a></li>
+							<li><i></i><a>连衣裙/半身裙</a></li>
+							<li><i></i><a>裤子/短裤</a></li>
+							<li><i></i><a>微信支付流程</a></li>
+							<li><i></i><a>套装</a></li>
+							<li><i></i><a>支付流程</a></li>
+						</ul>
+					</li>
+					<li><a>上衣/外套</a></li>
+					<li><a>T恤/衬衫</a></li>
+					<li><a>开衫/马甲</a></li>
+					<li><a>连衣裙/半身裙</a></li>
+					<li><a>套装</a></li>
+					<li><a id="teshu">微信支付流程</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- 物品详细信息 -->
+		<div id="shopping">
+			<!--<div>
+					<div class="fd-picture">
+						<img src="${data[index].imgSrc}"/>
+						<div class="sx-picture">
+							<img src="${data[index].imgSrc}"/>
+						</div>
+					</div>
+					<div id="bug">
+						<h1>${data[index].title}</h1>
+						<p>${"促销价:"data[index].price}</p>
+						<img class="zs-picture" src="${data[index].imgSrc}"/>
+						<div id="num">
+							<span>-</span>
+							<input type="text"/>
+							<span>+</span>
+						<div>
+						<div id="numBtn">
+							<input type="button" value="立即购买" />
+							<input type="button" data-id="${data[index].id}" value="加入购物车" /> 
+						</div>
+					</div>
+			</div>-->
+		</div>
+		
+		
+	</body>
+	<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
+</html>
+
+
