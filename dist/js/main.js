@@ -265,7 +265,7 @@ $(function () {
 				location.href = "cart.html";
 			});
 		});
-	};
+	}
 });
 $(function () {
 

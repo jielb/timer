@@ -99,9 +99,8 @@ $(function(){
 				Cart.addCart(id,Number($("#Num").val()),true)
 				location.href="cart.html"
 			})
-			
-		});
+		})
 		
-	};
+	}
 	
 });
