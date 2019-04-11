@@ -115,5 +115,7 @@ $(function(){
 					</li>`
 		}
 		$("#list-content").find("ul").html(str)
-	}
+		
+	};
+	
 });

@@ -10443,7 +10443,7 @@ $(function () {
 			str += "<li>\n\t\t\t\t\t\t<div class=\"list-border\"> \n\t\t\t\t\t\t<a href=\"detail.html?id=" + data1[attr].id + "\">\n\t\t\t\t\t\t\t<img src=\"" + data1[attr].imgSrc + "\"/>\n\t\t\t\t\t\t\t<p>" + data1[attr].title + "</p>\n\t\t\t\t\t\t\t<span>" + data1[attr].price + "</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</li>";
 		}
 		$("#list-content").find("ul").html(str);
-	}
+	};
 });
 $(function () {
 	$("#phone").click(function () {
