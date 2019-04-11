@@ -55,4 +55,4 @@
  			$("#cont").html("用户名或密码错误").css({"color":"red","fontSize":"12px"})
  		}
  	})
-})
+});
