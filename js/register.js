@@ -66,5 +66,6 @@ $(function(){
 			localStorage.setItem("register",str)
 			location.href = "login.html"
 		}
-	})
+	});
+	
 });
